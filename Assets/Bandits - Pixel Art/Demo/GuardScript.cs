@@ -13,13 +13,60 @@ public class GuardScript : MonoBehaviour, ICharacter {
     private bool                combatIdle = false;
     private bool                isGrounded = true;
 
-    public SpritePalette ActivePalette => throw new System.NotImplementedException();
+    #region copied ICharacter from Character stuff
 
-    public SpritePaletteGroup PaletteGroup => throw new System.NotImplementedException();
+    protected SpriteRenderer m_Renderer;
+    [SerializeField]
+    protected float m_BasePoise = 1f;
+    protected float m_Poise;
+    [SerializeField]
+    protected SpritePalette m_ActivePalette;
+    [SerializeField]
+    protected SpritePaletteGroup m_PaletteGroup;
+    protected bool LockFlip { get; set; }
+    protected Color m_DefaultColor;
 
-    public float Poise { get => throw new System.NotImplementedException(); set => throw new System.NotImplementedException(); }
 
-    public bool FlipX => throw new System.NotImplementedException();
+    public SpritePalette ActivePalette { get { return m_ActivePalette; } }
+    public SpritePaletteGroup PaletteGroup { get { return m_PaletteGroup; } }
+
+    public float Poise
+    {
+        get { return m_BasePoise + m_Poise; }
+        set { m_Poise = value; }
+    }
+
+
+    public bool FlipX {
+        get { return m_Renderer.flipX; }
+        protected set { if (LockFlip == false) m_Renderer.flipX = value; }
+    }
+
+
+    private void Awake()
+    {
+
+        m_Renderer = GetComponent<SpriteRenderer>();
+        m_DefaultColor = m_Renderer.color;
+
+        SetPalette(m_ActivePalette);
+    }
+
+    public void SetPalette(SpritePalette palette)
+    {
+        m_ActivePalette = palette;
+
+        if (palette != null)
+        {
+            var block = new MaterialPropertyBlock();
+
+            if (m_Renderer == null) m_Renderer = GetComponent<SpriteRenderer>();
+            m_Renderer.GetPropertyBlock(block);
+            block.SetTexture("_SwapTex", palette.Texture);
+            m_Renderer.SetPropertyBlock(block);
+        }
+    }
+    #endregion
 
     // Use this for initialization
     void Start () {

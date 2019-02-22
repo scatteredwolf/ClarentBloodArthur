@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 7011995411655902444}
   - component: {fileID: 7011995411655902440}
   - component: {fileID: 7011995411655902443}
+  - component: {fileID: 8229169258603036785}
   m_Layer: 0
   m_Name: LightBandit
   m_TagString: Untagged
@@ -49,6 +50,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 1
   jumpForce: 4
+  m_BasePoise: 1
+  m_ActivePalette: {fileID: 0}
+  m_PaletteGroup: {fileID: 0}
 --- !u!212 &7011995411655902445
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -86,7 +90,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 635e263fa39871745bd59ff1931292bb, type: 3}
+  m_Sprite: {fileID: 21300074, guid: 635e263fa39871745bd59ff1931292bb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -163,3 +167,889 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.16, y: 0.36}
   m_EdgeRadius: 0
+--- !u!114 &8229169258603036785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7011995411655902447}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b519ef76898b7734d9c6104490d6af9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Animations:
+  - clip: {fileID: 7400000, guid: 5ebd92ec0147c7d4dac5630b51456c5f, type: 2}
+    framedata:
+    - collider:
+      - rect:
+          x: -8
+          y: 2
+          width: 22
+          height: 16
+        type: 0
+      - rect:
+          x: -5
+          y: 18
+          width: 12
+          height: 21
+        type: 0
+      - rect:
+          x: 7
+          y: 18
+          width: 6
+          height: 12
+        type: 0
+      events: []
+      capsuleOffset: {x: 0, y: 0}
+      smoothedOffset: 0
+    - collider:
+      - rect:
+          x: -8
+          y: 2
+          width: 22
+          height: 16
+        type: 0
+      - rect:
+          x: -5
+          y: 18
+          width: 12
+          height: 21
+        type: 0
+      - rect:
+          x: 7
+          y: 18
+          width: 6
+          height: 12
+        type: 0
+      events: []
+      capsuleOffset: {x: 0, y: 0}
+      smoothedOffset: 0
+    - collider:
+      - rect:
+          x: -8
+          y: 2
+          width: 22
+          height: 16
+        type: 0
+      - rect:
+          x: -5
+          y: 18
+          width: 12
+          height: 20
+        type: 0
+      - rect:
+          x: 7
+          y: 18
+          width: 6
+          height: 12
+        type: 0
+      events: []
+      capsuleOffset: {x: 0, y: 0}
+      smoothedOffset: 0
+    - collider:
+      - rect:
+          x: -8
+          y: 2
+          width: 22
+          height: 16
+        type: 0
+      - rect:
+          x: -5
+          y: 18
+          width: 12
+          height: 20
+        type: 0
+      - rect:
+          x: 7
+          y: 18
+          width: 6
+          height: 12
+        type: 0
+      events: []
+      capsuleOffset: {x: 0, y: 0}
+      smoothedOffset: 0
+    movementstate: 0
+    movementspeed: 0
+    poise: 0
+    strength: 0
+    damage: 0
+    force: {x: 0, y: 0}
+    direction:
+      x: {x: 0, y: 0}
+      y: {x: 0, y: 0}
+    numtargets: 0
+    hitfxlabel: 0
+    hitfxuid: 0
+  - clip: {fileID: 7400000, guid: 6a1ebf4e9e2b85c4dbeebc58d8f911ca, type: 2}
+    framedata:
+    - collider:
+      - rect:
+          x: -3
+          y: 17
+          width: 12
+          height: 20
+        type: 0
+      - rect:
+          x: -9
+          y: 2
+          width: 25
+          height: 15
+        type: 0
+      events: []
+      capsuleOffset: {x: 0, y: 0}
+      smoothedOffset: 0
+    - collider:
+      - rect:
+          x: -3
+          y: 17
+          width: 12
+          height: 20
+        type: 0
+      - rect:
+          x: -9
+          y: 2
+          width: 25
+          height: 15
+        type: 0
+      events: []
+      capsuleOffset: {x: 0, y: 0}
+      smoothedOffset: 0
+    - collider:
+      - rect:
+          x: -3
+          y: 16
+          width: 12
+          height: 20
+        type: 0
+      - rect:
+          x: -9
+          y: 2
+          width: 25
+          height: 14
+        type: 0
+      events: []
+      capsuleOffset: {x: 0, y: 0}
+      smoothedOffset: 0
+    - collider:
+      - rect:
+          x: -3
+          y: 16
+          width: 12
+          height: 20
+        type: 0
+      - rect:
+          x: -9
+          y: 2
+          width: 25
+          height: 14
+        type: 0
+      events: []
+      capsuleOffset: {x: 0, y: 0}
+      smoothedOffset: 0
+    movementstate: 0
+    movementspeed: 0
+    poise: 0
+    strength: 0
+    damage: 0
+    force: {x: 0, y: 0}
+    direction:
+      x: {x: 0, y: 0}
+      y: {x: 0, y: 0}
+    numtargets: 0
+    hitfxlabel: 0
+    hitfxuid: 0
+  - clip: {fileID: 7400000, guid: c2755e67fa2a27c4784f3f25fb5572ef, type: 2}
+    framedata:
+    - collider:
+      - rect:
+          x: -5
+          y: 11
+          width: 10
+          height: 24
+        type: 0
+      - rect:
+          x: -8
+          y: 17
+          width: 3
+          height: 6
+        type: 0
+      - rect:
+          x: 5
+          y: 13
+          width: 8
+          height: 15
+        type: 0
+      - rect:
+          x: 3
+          y: 2
+          width: 13
+          height: 12
+        type: 0
+      events: []
+      capsuleOffset: {x: 0, y: 0}
+      smoothedOffset: 0
+    - collider:
+      - rect:
+          x: -6
+          y: 14
+          width: 11
+          height: 22
+        type: 0
+      - rect:
+          x: -12
+          y: 19
+          width: 6
+          height: 5
+        type: 0
+      - rect:
+          x: 5
+          y: 13
+          width: 8
+          height: 15
+        type: 0
+      - rect:
+          x: -4
+          y: 3
+          width: 20
+          height: 11
+        type: 0
+      events: []
+      capsuleOffset: {x: 0, y: 0}
+      smoothedOffset: 0
+    - collider:
+      - rect:
+          x: -6
+          y: 14
+          width: 11
+          height: 23
+        type: 0
+      - rect:
+          x: -13
+          y: 20
+          width: 7
+          height: 7
+        type: 0
+      - rect:
+          x: 5
+          y: 14
+          width: 9
+          height: 16
+        type: 0
+      - rect:
+          x: -10
+          y: 2
+          width: 26
+          height: 12
+        type: 0
+      events: []
+      capsuleOffset: {x: 0, y: 0}
+      smoothedOffset: 0
+    - collider:
+      - rect:
+          x: -5
+          y: 14
+          width: 10
+          height: 23
+        type: 0
+      - rect:
+          x: -8
+          y: 16
+          width: 3
+          height: 4
+        type: 0
+      - rect:
+          x: 5
+          y: 14
+          width: 8
+          height: 16
+        type: 0
+      - rect:
+          x: -6
+          y: 1
+          width: 16
+          height: 13
+        type: 0
+      events: []
+      capsuleOffset: {x: 0, y: 0}
+      smoothedOffset: 0
+    - collider:
+      - rect:
+          x: -5
+          y: 5
+          width: 10
+          height: 30
+        type: 0
+      - rect:
+          x: 5
+          y: 13
+          width: 6
+          height: 15
+        type: 0
+      - rect:
+          x: 5
+          y: 2
+          width: 10
+          height: 11
+        type: 0
+      events: []
+      capsuleOffset: {x: 0, y: 0}
+      smoothedOffset: 0
+    - collider:
+      - rect:
+          x: -6
+          y: 6
+          width: 11
+          height: 30
+        type: 0
+      - rect:
+          x: 5
+          y: 13
+          width: 5
+          height: 15
+        type: 0
+      - rect:
+          x: 5
+          y: 4
+          width: 9
+          height: 9
+        type: 0
+      events: []
+      capsuleOffset: {x: 0, y: 0}
+      smoothedOffset: 0
+    - collider:
+      - rect:
+          x: -6
+          y: 10
+          width: 11
+          height: 27
+        type: 0
+      - rect:
+          x: 5
+          y: 18
+          width: 3
+          height: 10
+        type: 0
+      - rect:
+          x: 5
+          y: 9
+          width: 10
+          height: 9
+        type: 0
+      - rect:
+          x: -10
+          y: 2
+          width: 8
+          height: 8
+        type: 0
+      events: []
+      capsuleOffset: {x: 0, y: 0}
+      smoothedOffset: 0
+    - collider:
+      - rect:
+          x: -5
+          y: 10
+          width: 10
+          height: 27
+        type: 0
+      - rect:
+          x: 5
+          y: 18
+          width: 4
+          height: 11
+        type: 0
+      - rect:
+          x: 5
+          y: 9
+          width: 7
+          height: 9
+        type: 0
+      - rect:
+          x: -5
+          y: 2
+          width: 7
+          height: 8
+        type: 0
+      events: []
+      capsuleOffset: {x: 0, y: 0}
+      smoothedOffset: 0
+    movementstate: 0
+    movementspeed: 0
+    poise: 0
+    strength: 0
+    damage: 0
+    force: {x: 0, y: 0}
+    direction:
+      x: {x: 0, y: 0}
+      y: {x: 0, y: 0}
+    numtargets: 0
+    hitfxlabel: 0
+    hitfxuid: 0
+  - clip: {fileID: 7400000, guid: f50ea1e86c917ee4a886801ca2d6f4c2, type: 2}
+    framedata:
+    - collider:
+      - rect:
+          x: -3
+          y: 24
+          width: 15
+          height: 12
+        type: 0
+      - rect:
+          x: -2
+          y: 18
+          width: 8
+          height: 6
+        type: 0
+      - rect:
+          x: -5
+          y: 10
+          width: 14
+          height: 8
+        type: 0
+      - rect:
+          x: 5
+          y: 2
+          width: 7
+          height: 9
+        type: 0
+      - rect:
+          x: -10
+          y: 2
+          width: 10
+          height: 8
+        type: 0
+      events: []
+      capsuleOffset: {x: 0, y: 0}
+      smoothedOffset: 0
+    - collider:
+      - rect:
+          x: -3
+          y: 24
+          width: 15
+          height: 11
+        type: 0
+      - rect:
+          x: -2
+          y: 18
+          width: 8
+          height: 6
+        type: 0
+      - rect:
+          x: -5
+          y: 10
+          width: 14
+          height: 8
+        type: 0
+      - rect:
+          x: 5
+          y: 2
+          width: 7
+          height: 9
+        type: 0
+      - rect:
+          x: -11
+          y: 2
+          width: 10
+          height: 8
+        type: 0
+      events: []
+      capsuleOffset: {x: 0, y: 0}
+      smoothedOffset: 0
+    - collider:
+      - rect:
+          x: -2
+          y: 24
+          width: 13
+          height: 10
+        type: 0
+      - rect:
+          x: -2
+          y: 18
+          width: 8
+          height: 6
+        type: 0
+      - rect:
+          x: -5
+          y: 10
+          width: 14
+          height: 8
+        type: 0
+      - rect:
+          x: 5
+          y: 2
+          width: 7
+          height: 9
+        type: 0
+      - rect:
+          x: -11
+          y: 2
+          width: 10
+          height: 8
+        type: 0
+      events: []
+      capsuleOffset: {x: 0, y: 0}
+      smoothedOffset: 0
+    - collider:
+      - rect:
+          x: -2
+          y: 24
+          width: 13
+          height: 10
+        type: 0
+      - rect:
+          x: -2
+          y: 18
+          width: 8
+          height: 6
+        type: 0
+      - rect:
+          x: -5
+          y: 10
+          width: 14
+          height: 8
+        type: 0
+      - rect:
+          x: 5
+          y: 2
+          width: 7
+          height: 9
+        type: 0
+      - rect:
+          x: -11
+          y: 2
+          width: 10
+          height: 8
+        type: 0
+      events: []
+      capsuleOffset: {x: 0, y: 0}
+      smoothedOffset: 0
+    - collider:
+      - rect:
+          x: -22
+          y: 22
+          width: 8
+          height: 16
+        type: 1
+      - rect:
+          x: -18
+          y: 17
+          width: 23
+          height: 7
+        type: 1
+      - rect:
+          x: -17
+          y: 33
+          width: 10
+          height: 10
+        type: 1
+      - rect:
+          x: -10
+          y: 38
+          width: 21
+          height: 8
+        type: 1
+      - rect:
+          x: -3
+          y: 22
+          width: 14
+          height: 16
+        type: 0
+      - rect:
+          x: -8
+          y: 24
+          width: 5
+          height: 9
+        type: 0
+      - rect:
+          x: -7
+          y: 2
+          width: 23
+          height: 15
+        type: 0
+      - rect:
+          x: -3
+          y: 17
+          width: 11
+          height: 6
+        type: 0
+      events: []
+      capsuleOffset: {x: 0, y: 0}
+      smoothedOffset: 0
+    - collider:
+      - rect:
+          x: -22
+          y: 22
+          width: 10
+          height: 16
+        type: 1
+      - rect:
+          x: -18
+          y: 17
+          width: 23
+          height: 7
+        type: 1
+      - rect:
+          x: -17
+          y: 33
+          width: 10
+          height: 10
+        type: 1
+      - rect:
+          x: -10
+          y: 38
+          width: 21
+          height: 8
+        type: 1
+      - rect:
+          x: -3
+          y: 23
+          width: 14
+          height: 14
+        type: 0
+      - rect:
+          x: -6
+          y: 24
+          width: 3
+          height: 7
+        type: 0
+      - rect:
+          x: -7
+          y: 2
+          width: 23
+          height: 15
+        type: 0
+      - rect:
+          x: -3
+          y: 17
+          width: 11
+          height: 6
+        type: 0
+      events: []
+      capsuleOffset: {x: 0, y: 0}
+      smoothedOffset: 0
+    - collider:
+      - rect:
+          x: -17
+          y: 31
+          width: 7
+          height: 12
+        type: 1
+      - rect:
+          x: -10
+          y: 38
+          width: 21
+          height: 8
+        type: 1
+      - rect:
+          x: -3
+          y: 23
+          width: 14
+          height: 14
+        type: 0
+      - rect:
+          x: -6
+          y: 24
+          width: 3
+          height: 7
+        type: 0
+      - rect:
+          x: -7
+          y: 2
+          width: 23
+          height: 15
+        type: 0
+      - rect:
+          x: -3
+          y: 17
+          width: 11
+          height: 6
+        type: 0
+      events: []
+      capsuleOffset: {x: 0, y: 0}
+      smoothedOffset: 0
+    - collider:
+      - rect:
+          x: -3
+          y: 23
+          width: 14
+          height: 14
+        type: 0
+      - rect:
+          x: -6
+          y: 24
+          width: 3
+          height: 7
+        type: 0
+      - rect:
+          x: -7
+          y: 2
+          width: 23
+          height: 15
+        type: 0
+      - rect:
+          x: -3
+          y: 17
+          width: 11
+          height: 6
+        type: 0
+      events: []
+      capsuleOffset: {x: 0, y: 0}
+      smoothedOffset: 0
+    movementstate: 0
+    movementspeed: 0
+    poise: 0
+    strength: 0
+    damage: 0
+    force: {x: 0, y: 0}
+    direction:
+      x: {x: 0, y: 0}
+      y: {x: 0, y: 0}
+    numtargets: 0
+    hitfxlabel: 0
+    hitfxuid: 0
+  - clip: {fileID: 7400000, guid: 8e501a4decb168e48bb9b17dc0ea2b53, type: 2}
+    framedata:
+    - collider: []
+      events: []
+      capsuleOffset: {x: 0, y: 0}
+      smoothedOffset: 0
+    - collider: []
+      events: []
+      capsuleOffset: {x: 0, y: 0}
+      smoothedOffset: 0
+    - collider: []
+      events: []
+      capsuleOffset: {x: 0, y: 0}
+      smoothedOffset: 0
+    - collider: []
+      events: []
+      capsuleOffset: {x: 0, y: 0}
+      smoothedOffset: 0
+    - collider: []
+      events: []
+      capsuleOffset: {x: 0, y: 0}
+      smoothedOffset: 0
+    - collider: []
+      events: []
+      capsuleOffset: {x: 0, y: 0}
+      smoothedOffset: 0
+    - collider: []
+      events: []
+      capsuleOffset: {x: 0, y: 0}
+      smoothedOffset: 0
+    - collider: []
+      events: []
+      capsuleOffset: {x: 0, y: 0}
+      smoothedOffset: 0
+    movementstate: 0
+    movementspeed: 0
+    poise: 0
+    strength: 0
+    damage: 0
+    force: {x: 0, y: 0}
+    direction:
+      x: {x: 0, y: 0}
+      y: {x: 0, y: 0}
+    numtargets: 0
+    hitfxlabel: 0
+    hitfxuid: 0
+  - clip: {fileID: 7400000, guid: f4d08aca8d9c8b24f969b71bcb299c54, type: 2}
+    framedata:
+    - collider:
+      - rect:
+          x: -6
+          y: 3
+          width: 16
+          height: 28
+        type: 4
+      events: []
+      capsuleOffset: {x: 0, y: 0}
+      smoothedOffset: 0
+    movementstate: 0
+    movementspeed: 0
+    poise: 0
+    strength: 0
+    damage: 0
+    force: {x: 0, y: 0}
+    direction:
+      x: {x: 0, y: 0}
+      y: {x: 0, y: 0}
+    numtargets: 0
+    hitfxlabel: 0
+    hitfxuid: 0
+  - clip: {fileID: 7400000, guid: e38cb418ab88f9346b0ebccb770105ee, type: 2}
+    framedata:
+    - collider: []
+      events: []
+      capsuleOffset: {x: 0, y: 0}
+      smoothedOffset: 0
+    movementstate: 0
+    movementspeed: 0
+    poise: 0
+    strength: 0
+    damage: 0
+    force: {x: 0, y: 0}
+    direction:
+      x: {x: 0, y: 0}
+      y: {x: 0, y: 0}
+    numtargets: 0
+    hitfxlabel: 0
+    hitfxuid: 0
+  - clip: {fileID: 7400000, guid: d756094fc5e8c594ba2e2ba808fe9a90, type: 2}
+    framedata:
+    - collider:
+      - rect:
+          x: 1
+          y: 2
+          width: 10
+          height: 7
+        type: 0
+      - rect:
+          x: -4
+          y: 9
+          width: 13
+          height: 10
+        type: 0
+      - rect:
+          x: -1
+          y: 19
+          width: 6
+          height: 4
+        type: 0
+      - rect:
+          x: -3
+          y: 23
+          width: 15
+          height: 9
+        type: 0
+      - rect:
+          x: -8
+          y: 20
+          width: 5
+          height: 7
+        type: 0
+      - rect:
+          x: -2
+          y: 32
+          width: 9
+          height: 7
+        type: 0
+      events: []
+      capsuleOffset: {x: 0, y: 0}
+      smoothedOffset: 0
+    movementstate: 0
+    movementspeed: 0
+    poise: 0
+    strength: 0
+    damage: 0
+    force: {x: 0, y: 0}
+    direction:
+      x: {x: 0, y: 0}
+      y: {x: 0, y: 0}
+    numtargets: 0
+    hitfxlabel: 0
+    hitfxuid: 0
+  m_CurrentAnimation: 7
+  m_CurrentFrame: 0
+  m_CurrentCollider: 0
